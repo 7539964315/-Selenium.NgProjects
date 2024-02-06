@@ -17,6 +17,8 @@ driver.get("https://www.saucedemo.com/");     //july 30,31= assinments
 driver.manage().window().maximize();
 //driver.findElement(By.id("details-button")).click();
 //driver.findElement(By.id("proceed-link")).click();
+ String str =driver.findElement(By.xpath("//div[text()='Swag Labs']")).getText();
+ System.out.println(str);
 
 driver.findElement(By.id("user-name")).sendKeys("standard_user");
 driver.findElement(By.id("password")).sendKeys("secret_sauce");
@@ -57,6 +59,7 @@ System.out.println(tgname);//h2
           //  driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
             driver.findElement(By.id("react-burger-menu-btn")).click();
             driver.findElement(By.id("logout_sidebar_link")).click();
+            
             
 }
 }

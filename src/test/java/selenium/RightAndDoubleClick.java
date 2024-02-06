@@ -28,6 +28,7 @@ Actions act1 = new Actions(driver);
 act1.doubleClick(doubleclick).build().perform();
 Alert alt1 = driver.switchTo().alert();
 alt1.accept();
+driver.quit();
 
 
 

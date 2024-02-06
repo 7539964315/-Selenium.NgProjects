@@ -20,6 +20,7 @@ public class PracticeTest {
 		//String  gettext = driver.findElement(By.xpath("//h1[contains(text(),'Sudha Gopalakrishnan Brain Centre')]")).getText();
 		String  gettext = driver.findElement(By.xpath("//h1[@class='head']")).getText();
 		System.out.println(gettext);
+		driver.quit();
 	}
 
 }
